@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,23 +10,23 @@
 </head>
 
 <body>
-
-    <table border="1px">
+    <table border="solid 1px">
         <tr>
             <td>NOME FANTASIA</td>
-            <td>DATA FABRICACAO</td>
+            <td>DATA DE FABRICACAO</td>
             <td>COR</td>
             <td>ALTURA</td>
             <td>PRECO</td>
             <td>PESO</td>
         </tr>
-        <%for(var i=0; i<resultsHTML.length;i++>){%>
+        <% for(var i=0; i<resultsHTML.length;i++){%>
             <tr>
                 <td><%= resultsHTML[i].nomeFantasia%></td>
                 <td><%= resultsHTML[i].dataFabricacao%></td>
                 <td><%= resultsHTML[i].cor%></td>
                 <td><%= resultsHTML[i].altura%></td>
                 <td><%= resultsHTML[i].preco%></td>
+                <td><%= resultsHTML[i].peso%></td>
             </tr>
         <%}%>       
     </table>
